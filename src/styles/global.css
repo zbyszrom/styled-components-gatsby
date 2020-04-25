@@ -1,0 +1,26 @@
+:root {
+  --primary: rgba(248, 4, 156, 1);
+  --secondary: rgba(253, 213, 79, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tomorrow";
+}
+p {
+  font-family: "Inria Serif";
+}
