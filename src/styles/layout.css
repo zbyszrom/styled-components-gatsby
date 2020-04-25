@@ -6,6 +6,7 @@ header {
   position: fixed;
   top: 0;
   background: linear-gradient(to right, var(--primary), var(--secondary));
+  border-bottom: 4px solid var(--secondary);
 }
 nav {
   position: absolute;
