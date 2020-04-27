@@ -3,6 +3,10 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaAlignRight, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa"
 
+const Header = styled.header`
+  display: flex;
+`
+
 const Button = styled.button`
   background: transparent;
   border: none;
@@ -22,6 +26,13 @@ const SFaAlignRight = styled(FaAlignRight)`
 `
 const Nav = styled.nav`
   display: ${p => (p.open ? "block" : "none")};
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  padding: 8px;
+  border-bottom: 4px solid var(--secondary);
+
   @media (min-width: 800px) {
     display: flex;
     background: none;
@@ -36,19 +47,20 @@ const Nav = styled.nav`
     padding: 4px 8px;
     display: block;
     text-align: center;
+    margin: auto 0;
     color: var(--primary);
     font-weight: bold;
   }
 `
 
-const Navbar = () => {
-  const [isOpen, setMenu] = useState(false)
+const Navbar = ({ isOpen, setMenu, children }) => {
   const toggleMenu = () => {
     setMenu(isOpen => !isOpen)
   }
-
   return (
     <header>
+      {children}
+
       <Button type="button" onClick={toggleMenu}>
         <SFaAlignRight />
       </Button>

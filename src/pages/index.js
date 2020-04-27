@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-//import Header from "../components/header"
 
 const IndexPage = ({ children }) => {
   const data = useStaticQuery(graphql`

@@ -6,15 +6,8 @@ header {
   position: fixed;
   top: 0;
   background: linear-gradient(to right, var(--primary), var(--secondary));
-  border-bottom: 4px solid var(--secondary);
 }
-nav {
-  position: absolute;
-  width: 100%;
-  top: 60px;
-  left: 0;
-  padding: 8px;
-}
+
 main {
   max-width: 800px;
   margin: 80px auto 0 auto;
