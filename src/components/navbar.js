@@ -1,11 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaAlignRight, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa"
-
-const Header = styled.header`
-  display: flex;
-`
 
 const Button = styled.button`
   background: transparent;

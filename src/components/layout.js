@@ -5,11 +5,6 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 import "../styles/layout.css"
 
-const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
 const Main = styled.main`
   margin-top: ${p => (p.open ? "160px" : "80px")};
   @media (min-width: 800px) {
